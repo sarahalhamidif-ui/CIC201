@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronc Store - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Electronc store</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="About Us.html">About Us</a>
+                <a href="cart.html">Cart (0)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Our Products</h1>
+        
+        <div class="products-container">
+ - 
+            <section class="product-category">
+                <h2>PlayStation</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="images/ps5.jpg" alt="PS5 Console">
+                        <h3>PlayStation 5</h3>
+                        <p class="price">800 SR</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            - 
+            <section class="product-category">
+                <h2>Xbox</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="images/xbox.jpg" alt="Xbox Series X">
+                        <h3>Xbox Series X</h3>
+                        <p class="price">700 SR</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+             
+            <section class="product-category">
+                <h2>Nintendo</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="images/nintendo.jpg" alt="Nintendo Switch">
+                        <h3>Nintendo Switch</h3>
+                        <p class="price">900 SR</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>GitHub: https://github.com/naldekheel-lgtm/my-website</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Product added to cart!');
+            });
+        });
+    </script>
+</body>
+</html>
